@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: rgba(94, 97, 100, 0.8);
 }
 h1,
 h2,
@@ -158,8 +158,117 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
+  height: 500px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-form h2 {
-  color: #23293B;
+.create-account-form {
+  width: 70%;
+  height: 400px;
+  padding: 20px 10px;
+  border: 2px double rgba(94, 97, 100, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.create-account-form input {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+}
+.create-account-form button {
+  background-color: rgba(34, 40, 58, 0.9);
+  color: #F6F6F6;
+  padding: 5px;
+  margin: 10px;
+  width: 20%;
+  border-radius: 5px;
+}
+.create-account-form > * {
+  margin: 7px;
+}
+.account-copy-form {
+  width: 70%;
+  height: 400px;
+  padding: 20px 10px;
+  border: 2px double rgba(94, 97, 100, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.account-copy-form .left-p {
+  margin-left: -290px;
+}
+.account-copy-form input {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+}
+.account-copy-form button {
+  background-color: rgba(34, 40, 58, 0.9);
+  color: #F6F6F6;
+  padding: 7px;
+  margin: 10px;
+  width: 70%;
+  border-radius: 5px;
+}
+.account-copy-form > * {
+  margin: 7px;
+}
+.join-org-form {
+  width: 70%;
+  height: 400px;
+  padding: 20px 10px;
+  border: 2px double rgba(94, 97, 100, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.join-org-form input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+}
+.join-org-form > * {
+  margin: 7px;
+}
+.create-group {
+  width: 70%;
+  height: 400px;
+  padding: 20px 10px;
+  border: 2px double rgba(94, 97, 100, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.create-group hr {
+  border: 0.5px solid rgba(221, 218, 218, 0.9);
+  width: 55%;
+}
+.create-group .label {
+  margin-left: -250px;
+}
+.create-group input {
+  width: 65%;
+  height: 30px;
+  border-radius: 5px;
+}
+.create-group button {
+  background-color: rgba(34, 40, 58, 0.9);
+  color: #F6F6F6;
+  padding: 7px;
+  margin: 10px;
+  width: 20%;
+  border-radius: 5px;
+}
+.create-group > * {
+  margin: 7px;
 }

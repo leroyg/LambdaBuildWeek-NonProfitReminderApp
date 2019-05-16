@@ -1,4 +1,4 @@
-.create-account-form {
+.create-group {
   width: 70%;
   height: 400px;
   padding: 20px 10px;
@@ -8,24 +8,31 @@
   align-items: center;
   justify-content: center;
 
+  hr {
+    border: 0.5px solid rgba(221, 218, 218, 0.9);
+    width: 55%;
+  }
+
+  .label {
+    margin-left: -250px;
+  }
 
   input {
-    width: 70%;
+    width: 65%;
     height: 30px;
     border-radius: 5px;
   }
 
   button {
     background-color: @btn-color;
-    color: @btn-color-text; 
-    padding: 5px;
+    color: @btn-color-text;
+    padding: 7px;
     margin: 10px;
     width: 20%;
     border-radius: 5px;
   }
 }
 
-.create-account-form >* {
+.create-group >* {
   margin: 7px;
 }
-
