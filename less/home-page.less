@@ -1,0 +1,270 @@
+//index.html
+.container-home {
+  max-width: 1000px;
+  width: 100%;
+  height: 620px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid @form-border;
+
+
+  ////////////////////////////////////////////////////////
+  //SIDE-BAR
+  .side-bar {
+    align-items: stretch;
+    background-color: rgba(231, 228, 228, 0.7);
+    width: 25%;
+    padding: 10px;
+
+    .side-top-content {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      margin-bottom: 40px;
+
+      .user-image {
+        width: 50px;
+        margin: 12px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      #top-p {
+        margin: 0 5px;
+      }
+    }
+
+    .org {
+      margin-bottom: 50px;
+      line-height: 25px;
+    }
+
+    .groups {
+      margin-bottom: 50px;
+      line-height: 25px;
+    }
+
+    .schedule {
+      margin-bottom: 50px;
+      line-height: 25px;
+    }
+
+
+    .icon-text-box {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-left: 2px;
+        margin-bottom: 15px;
+        color: #33B5E5;
+      }
+
+      ion-icon {
+        font-size: 25px;
+        color: #33B5E5;
+        margin-left: 4px;
+        margin-top: -15px;
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 8px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+  }
+
+  ////////////////////////////////////////////////////////
+  //TOP CONTENT
+  .main-content {
+    width: 100%;
+    height: 160px;
+
+    .user {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      margin: 25px;
+
+      .cohort-img {
+        width: 65px;
+        margin-right: 15px;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .add-contact {
+        display: flex;
+        margin-left: 300px;
+
+
+        button {
+          background-color: #fff;
+          font-weight: bold;
+          color: #33B5E5;
+          padding: 6px;
+          margin: 5px;
+          border-radius: 4px;
+          border: 1px solid #33B5E5;
+
+          ion-icon {
+            color: rgb(148, 144, 144);
+          }
+        }
+      }
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 50px;
+      margin-top: 60px;
+      width: 30%;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+
+      }
+
+    }
+
+  }
+
+  hr {
+    border: 1px solid rgba(224, 219, 219, 0.7);
+    width: 90%;
+    margin-top: 15px;
+  }
+
+
+  ///////////////////////////////////////////////////////////
+  // SEARCH SECTION
+  .section-search {
+    display: flex;
+    width: 100%;
+    height: 150px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-left: 40px;
+      margin-top: 5px;
+    }
+
+    .search-box {
+      display: flex;
+      border: 1px solid rgba(224, 220, 220, 0.9);
+      margin-top: 15px;
+      margin-left: 35px;
+      padding: 5px;
+      border-radius: 4px;
+      height: 40px;
+
+      button {
+        border: none;
+        background-color: #fff;
+
+        &:focus {
+          outline: none;
+        }
+
+        ion-icon {
+          font-size: 20px;
+          color: gray;
+        }
+      }
+
+      input {
+        border: none;
+        width: 190px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 25px;
+      margin-left: 40px;
+    }
+  }
+
+  ///////////////////////////////////////
+  //MESSAGE
+
+  .message {
+    margin-top: 180px;
+    h2 {
+      margin-left: 230px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin-left: 230px;
+      font-size: 1.1rem;
+    }
+  }
+
+  ///////////////////////////////////////
+  //FOOTER
+
+  footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+
+    img {
+      width: 14%;
+      margin-left: 20px;
+    }
+
+    input {
+      width: 50%;
+      height: 40px;
+      border: 1px solid rgba(224, 220, 220, 0.9);
+      border-radius: 3px;
+      margin-left: 100px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background: #33B5E5;
+      width: 50px;
+      height: 40px;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+    }
+  }
+
+
+}

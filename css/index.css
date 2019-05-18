@@ -233,7 +233,6 @@ p {
   width: 90%;
   height: 30px;
   border-radius: 5px;
-  background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
   padding-left: 30px;
 }
 .join-org-form > * {
@@ -271,4 +270,213 @@ p {
 }
 .create-group > * {
   margin: 7px;
+}
+.container-home {
+  max-width: 1000px;
+  width: 100%;
+  height: 620px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid rgba(94, 97, 100, 0.8);
+}
+.container-home .side-bar {
+  align-items: stretch;
+  background-color: rgba(231, 228, 228, 0.7);
+  width: 25%;
+  padding: 10px;
+}
+.container-home .side-bar .side-top-content {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 40px;
+}
+.container-home .side-bar .side-top-content .user-image {
+  width: 50px;
+  margin: 12px;
+}
+.container-home .side-bar .side-top-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container-home .side-bar .side-top-content #top-p {
+  margin: 0 5px;
+}
+.container-home .side-bar .org {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+.container-home .side-bar .groups {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+.container-home .side-bar .schedule {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+.container-home .side-bar .icon-text-box {
+  display: flex;
+  align-items: center;
+}
+.container-home .side-bar .icon-text-box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-bottom: 15px;
+  color: #33B5E5;
+}
+.container-home .side-bar .icon-text-box ion-icon {
+  font-size: 25px;
+  color: #33B5E5;
+  margin-left: 4px;
+  margin-top: -15px;
+}
+.container-home .side-bar h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 8px;
+  text-transform: uppercase;
+}
+.container-home .side-bar p {
+  font-size: 1.2rem;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+.container-home .main-content {
+  width: 100%;
+  height: 160px;
+}
+.container-home .main-content .user {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 25px;
+}
+.container-home .main-content .user .cohort-img {
+  width: 65px;
+  margin-right: 15px;
+}
+.container-home .main-content .user h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container-home .main-content .user .add-contact {
+  display: flex;
+  margin-left: 300px;
+}
+.container-home .main-content .user .add-contact button {
+  background-color: #fff;
+  font-weight: bold;
+  color: #33B5E5;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #33B5E5;
+}
+.container-home .main-content .user .add-contact button ion-icon {
+  color: #949090;
+}
+.container-home .main-content .nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 60px;
+  width: 30%;
+}
+.container-home .main-content .nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+.container-home hr {
+  border: 1px solid rgba(224, 219, 219, 0.7);
+  width: 90%;
+  margin-top: 15px;
+}
+.container-home .section-search {
+  display: flex;
+  width: 100%;
+  height: 150px;
+}
+.container-home .section-search h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+.container-home .section-search .search-box {
+  display: flex;
+  border: 1px solid rgba(224, 220, 220, 0.9);
+  margin-top: 15px;
+  margin-left: 35px;
+  padding: 5px;
+  border-radius: 4px;
+  height: 40px;
+}
+.container-home .section-search .search-box button {
+  border: none;
+  background-color: #fff;
+}
+.container-home .section-search .search-box button:focus {
+  outline: none;
+}
+.container-home .section-search .search-box button ion-icon {
+  font-size: 20px;
+  color: gray;
+}
+.container-home .section-search .search-box input {
+  border: none;
+  width: 190px;
+}
+.container-home .section-search .search-box input:focus {
+  outline: none;
+}
+.container-home .section-search h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.container-home .message {
+  margin-top: 180px;
+}
+.container-home .message h2 {
+  margin-left: 230px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.container-home .message p {
+  margin-left: 230px;
+  font-size: 1.1rem;
+}
+.container-home footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+}
+.container-home footer img {
+  width: 14%;
+  margin-left: 20px;
+}
+.container-home footer input {
+  width: 50%;
+  height: 40px;
+  border: 1px solid rgba(224, 220, 220, 0.9);
+  border-radius: 3px;
+  margin-left: 100px;
+}
+.container-home footer input:focus {
+  outline: none;
+}
+.container-home footer button {
+  background: #33B5E5;
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
 }
