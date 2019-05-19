@@ -378,7 +378,7 @@ p {
 }
 @media (max-width: 600px) {
   .container-home .main-content .user .add-contact {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .container-home .main-content .user .add-contact button {
     padding: 2px;
@@ -530,12 +530,11 @@ p {
     margin-right: 20px;
   }
   .container-home footer input {
-    width: 30%;
+    width: 80%;
     height: 30px;
     margin-left: 10px;
   }
   .container-home footer button {
-    width: 40px;
     height: 30px;
   }
 }
