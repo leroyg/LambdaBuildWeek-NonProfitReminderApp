@@ -498,6 +498,9 @@ p {
   height: 50px;
   margin-top: 20px;
 }
+.container-home footer form {
+  width: 70%;
+}
 .container-home footer img {
   width: 14%;
   margin-left: 20px;
@@ -537,4 +540,33 @@ p {
   .container-home footer button {
     height: 30px;
   }
+}
+.container-home footer #message {
+  font-size: 1.5rem;
+}
+.container-home .fill {
+  background-image: url('https://source.unsplash.com/random/140x140');
+  position: relative;
+  height: 135px;
+  width: 135px;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.container-home .hold {
+  border: solid 5px #33B5E5;
+}
+.container-home .empty {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px #33B5E5;
+  background: white;
+  border-radius: 50%;
+}
+.container-home .hovered {
+  background-color: rgba(231, 228, 228, 0.7);
+  border-style: dashed;
 }

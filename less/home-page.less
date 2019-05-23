@@ -282,6 +282,10 @@
     height: 50px;
     margin-top: 20px;
 
+    form {
+      width: 70%;
+    }
+
     img {
       width: 14%;
       margin-left: 20px;
@@ -329,5 +333,42 @@
         height: 30px;
       }
     }
+
+    #message {
+      font-size: 1.5rem;  
+    }
   }
+
+  ////////////////////////////////
+  //IMAGE BOXES
+  .fill {
+    background-image: url('https://source.unsplash.com/random/140x140');
+    position: relative;
+    height: 135px;
+    width: 135px;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .hold {
+    border: solid 5px #33B5E5;
+  }
+
+  .empty {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px #33B5E5;
+    background: white;
+    border-radius: 50%;
+  }
+
+  .hovered {
+    background-color: rgba(231, 228, 228, 0.7);
+    border-style: dashed;
+  }
+
 }
