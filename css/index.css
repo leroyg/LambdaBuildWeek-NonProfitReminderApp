@@ -177,15 +177,29 @@ p {
 .create-account-form input {
   width: 70%;
   height: 30px;
-  border-radius: 5px;
+  border-radius: px;
 }
 .create-account-form button {
-  background-color: rgba(34, 40, 58, 0.9);
+  background-color: #33B5E5;
   color: #F6F6F6;
   padding: 5px;
   margin: 10px;
   width: 20%;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .create-account-form {
+    width: 80%;
+  }
+  .create-account-form h3 {
+    font-size: 2.5rem;
+  }
+  .create-account-form input {
+    width: 90%;
+  }
+  .create-account-form button {
+    width: 30%;
+  }
 }
 .create-account-form > * {
   margin: 7px;
@@ -209,12 +223,29 @@ p {
   border-radius: 5px;
 }
 .account-copy-form button {
-  background-color: rgba(34, 40, 58, 0.9);
+  background-color: #33B5E5;
   color: #F6F6F6;
   padding: 7px;
   margin: 10px;
   width: 70%;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .account-copy-form {
+    width: 80%;
+  }
+  .account-copy-form h3 {
+    font-size: 2.3rem;
+  }
+  .account-copy-form input {
+    width: 90%;
+  }
+  .account-copy-form button {
+    width: 90%;
+  }
+  .account-copy-form .left-p {
+    margin-left: -240px;
+  }
 }
 .account-copy-form > * {
   margin: 7px;
@@ -229,14 +260,42 @@ p {
   align-items: center;
   justify-content: center;
 }
-.join-org-form input {
+.join-org-form .search-box {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border: 1px solid rgba(224, 220, 220, 0.9);
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 2px;
+  height: 40px;
+}
+.join-org-form .search-box .search-button {
+  border: none;
+  background-color: #fff;
+}
+.join-org-form .search-box .search-button:focus {
+  outline: none;
+}
+.join-org-form .search-box input {
   width: 90%;
   height: 30px;
-  border-radius: 5px;
-  padding-left: 30px;
+  border: none;
 }
-.join-org-form > * {
-  margin: 7px;
+.join-org-form .search-box input:focus {
+  outline: none;
+}
+.join-org-form .icon {
+  font-size: 20px;
+  color: gray;
+}
+@media (max-width: 500px) {
+  .join-org-form {
+    width: 80%;
+  }
+  .join-org-form h3 {
+    font-size: 2rem;
+  }
 }
 .create-group {
   width: 70%;
@@ -261,12 +320,35 @@ p {
   border-radius: 5px;
 }
 .create-group button {
-  background-color: rgba(34, 40, 58, 0.9);
+  background-color: #33B5E5;
   color: #F6F6F6;
   padding: 7px;
   margin: 10px;
   width: 20%;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .create-group {
+    width: 80%;
+  }
+  .create-group h3 {
+    font-size: 2.5rem;
+  }
+  .create-group p {
+    font-size: 1.5rem;
+  }
+  .create-group input {
+    width: 90%;
+  }
+  .create-group button {
+    width: 30%;
+  }
+  .create-group hr {
+    width: 80%;
+  }
+}
+.create-group .label {
+  margin-left: -230px;
 }
 .create-group > * {
   margin: 7px;
@@ -425,7 +507,7 @@ p {
 .container-home .section-search h2 {
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 40px;
+  margin-right: 200px;
   margin-top: 5px;
 }
 .container-home .section-search .search-box {
@@ -436,6 +518,7 @@ p {
   padding: 5px;
   border-radius: 4px;
   height: 40px;
+  width: 70%;
 }
 .container-home .section-search .search-box button {
   border: none;
@@ -511,6 +594,7 @@ p {
   border: 1px solid rgba(224, 220, 220, 0.9);
   border-radius: 3px;
   margin-left: 100px;
+  padding-left: 8px;
 }
 .container-home footer input:focus {
   outline: none;

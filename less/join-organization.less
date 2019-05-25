@@ -8,15 +8,47 @@
   align-items: center;
   justify-content: center;
 
-  input {
-    width: 90%;
-    height: 30px;
-    border-radius: 5px;
-   // background: url( images/comment-author.gif) no-repeat scroll 7px 7px;
-    padding-left: 30px;
-  }
-}
+  .search-box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border: 1px solid rgba(224, 220, 220, 0.9);
+    margin-top: 20px;
 
-.join-org-form>* {
-  margin: 7px;
+    padding: 5px;
+    border-radius: 2px;
+    height: 40px;
+
+    .search-button {
+      border: none;
+      background-color: #fff;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input {
+      width: 90%;
+      height: 30px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .icon {
+    font-size: 20px;
+    color: gray;
+  }
+
+  @media @mobile {
+    width: 80%;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
 }

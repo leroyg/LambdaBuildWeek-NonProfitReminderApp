@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   mainDiv.insertBefore(div, ul);
 
-  //Simplifying Code - Create elements uniting
+  //Create elements uniting
   function createLI(text) {
     function createElement(elementName, property, value) {
       const element = document.createElement(elementName)
