@@ -14,18 +14,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- GOOGLE WEB FONTS -->
-    <link
-        href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800"
-        rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" type="text/css">
+
+    <!-- local css file -->
+        <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <div class="container">
+        <header class="header">
     <!-- NAV -->
     <nav class="navbar" id="navigation">
         <div class="container-homepage-landing">
             <div class="logo-menu">
                 <div class="row">
-                    <div class="col-md-12 center">
+                    <div class="logo-menu-container">
                         <!-- LOGO -->
                         <a class="brand" id="main-logo" href="#">
                             <img src="img/logo.jpg" alt="Mentors Intl Logo">
@@ -47,7 +51,7 @@
         </div>
     </nav>
     <!-- END NAVIGATION -->
-
+</header>
     <!-- WELCOME -->
     <div class="welcome" id="page-home">
         <div class="overlay"></div>
@@ -85,24 +89,24 @@
                 <li class="col-md-4 training">
                     <a href="#">
                         <!-- Portfolio image -->
-                        <img src="img/training.jpg" alt="Training">
-                        <div class="portfolio-overlay">
+                        <img id="training-pic" src="img/training.jpg" alt="Training">
+                        <div class="element-overlay">
                             <h4>Training</h4>
                         </div>
                     </a>
                 </li>
                 <li class="col-md-4 loan">
                     <a href="#">
-                        <img src="img/money.jpg" alt="Loans">
-                        <div class="portfolio-overlay">
+                        <img id="loan-pic" src="img/money.jpg" alt="Loans">
+                        <div class="element-overlay">
                             <h4>Micro Loans</h4>
                         </div>
                     </a>
                 </li>
                 <li class="col-md-4 business">
                     <a href="#">
-                        <img src="img/finance.jpg" alt="business">
-                        <div class="portfolio-overlay">
+                        <img id="business-pic" src="img/finance.jpg" alt="business">
+                        <div class="element-overlay">
                             <h4>Grow</h4>
                         </div>
                     </a>
@@ -131,8 +135,7 @@
             </header>
             <!-- End Header -->
 
-            <!-- Article -->
-            <article>
+            <div>
                 <!-- Features blocks -->
                 <div class="row">
                     <div class="col-md-3 center">
@@ -169,8 +172,7 @@
                         </a>
                     </div>
                 </div>
-            </article>
-            <!-- End Article -->
+            </div>
         </div>
     </div>
 
@@ -265,6 +267,7 @@
     </div>
     <!-- End Contact information -->
     <!-- END PAGE | CONTACT -->
+</div>
 </body>
 
 </html>
