@@ -4,3 +4,24 @@
   align-items: center;
 }
 
+// Mixins Here
+.leroy-layout(@spacing, @way){
+	display: flex;
+	justify-content: @spacing;
+	flex-direction: @way;
+}
+.nav-mixin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.leroy-btn {
+    text-align: center;
+    height: 6rem;
+    width: 95%;
+
+    &:hover {
+        // The compiled color returned is #006667 
+        background-color: darken(darkgrey, 5%)
+    }
+}
