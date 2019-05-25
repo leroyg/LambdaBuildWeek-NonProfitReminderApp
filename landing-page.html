@@ -1,273 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
-    <!-- META DATA -->
     <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Mentors International - Changing Microfinance">
     <title>Mentors International</title>
+    <link
+        href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800"
+        rel="stylesheet" type="text/css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet"> -->
+    <link href="css/index.css" rel="stylesheet">
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- GOOGLE WEB FONTS -->
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" type="text/css">
-
-    <!-- local css file -->
-        <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-    <!-- NAV -->
-    <nav class="navbar" id="navigation">
-        <div class="container-homepage-landing">
-            <div class="logo-menu">
-                <div class="row">
-                    <div class="logo-menu-container">
-                        <!-- LOGO -->
-                        <a class="brand" id="main-logo" href="#">
-                            <img src="img/logo.jpg" alt="Mentors Intl Logo">
-                        </a>
-                        <!-- END LOGO -->
-
-                        <!-- MAIN MENU -->
-                        <ul id="main-menu" class="nav-item-links">
-                            <li><a href="#page-home">Home</a></li>
-                            <li><a href="#page-service">Services</a></li>
-                            <li><a href="#page-about">About</a></li>
-                            <li><a href="#page-blog">Blog</a></li>
-                            <li><a href="#page-contact">Contact</a></li>
-                        </ul>
-                        <!-- END MAIN MENU -->
-                    </div>
-                </div>
+    <div class="container-landing-page">
+        <!-- header start-->
+        <header class="intro">
+            <!-- navigation code here -->
+            <div class="logo-landing-page">
+                    <img class="logo-image" src="../LambdaBuildWeek-NonProfitReminderApp/img/logo.jpg" alt="Mentor International Logo">
+                <h1>Changing Micro Finance</h1>
             </div>
-        </div>
-    </nav>
-    <!-- END NAVIGATION -->
-</header>
-    <!-- WELCOME -->
-    <div class="welcome" id="page-home">
-        <div class="overlay"></div>
-        <div class="intro-text">
-            <div class="container-fluid">
-                <div class="row">
-                <div class="line-divider" id="welcome-messages">
-                    <h1>Mentors International</h1>
-                </div>
+            <div class="navigation" id="navigation-responsive">
+                <a href="#">Home</a>
+                <a href="#">App Sign In</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </header>
+        <div class="container-top-content">
+            <div class="top-content">
+                <img class="image-banner" src="/img/welcome.jpg" alt="Welcome Photo">
+                <h2>Mentors International</h2>
                 <p>ENDING POVERTY THROUGH MENTORING, TRAINING, AND SMALL LOANS</p>
                 <p>With your help, families in struggling communities throughout the world are breaking free from the
                     cycle of poverty through entrepreneurship</p>
             </div>
-        </div>
-    </div>
-    <!-- END Welcome -->
+            <section class="features-images">
+                <img src="img/training.jpg" class="training" id="training-image" alt="Training Blackboard">
+                <img src="img/money.jpg" class="money" alt="Currency">
+                <img src="img/finance.jpg" class="finance" alt="Credit Card Transaction">
+            </section>
 
-    <!-- WORK -->
-    <div class="services" id="page-service">
-        <div class="container">
-            <!-- Header -->
-            <header>
-                <h4 class="line-divider">Service</h4>
-                <h1>How Does Your Donation Help?</h1>
-                <div class="service-text">
-                    <p>
-                        93% of your donation goes directly to our mentoring and training programs and helping to fund
-                        these life-changing micro-loans. Learn more about our fiscal responsibility.
-                    </p>
+            <section class="features-text">
+                <h3>Mobile Based</h3>
+
+                <p>We connect via sms with our clients to streamline
+                    communication.
+                </p>
+
+                <p>Which there is no center because every point, or none, is center — an equal earth which all men
+                    occupy as equals. The airman's earth, if free men make it.</p>
+            </section>
+
+            <section class="about-us" id="about-us-responsive">
+                <div class="about-us-img" id="about-img-responsive">
+                    <img src="img/space-walk.png" alt="about us">
                 </div>
+                <div class="about-us-text" id="about-us-text-responsive">
+                    <h3>Let's Go For A Walk</h3>
 
-            </header>
-            <!-- End Header -->
-            <ul class="app-items">
-                <li class="col-md-4 training">
-                    <a href="#">
-                        <!-- Portfolio image -->
-                        <img id="training-pic" src="img/training.jpg" alt="Training">
-                        <div class="element-overlay">
-                            <h4>Training</h4>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-4 loan">
-                    <a href="#">
-                        <img id="loan-pic" src="img/money.jpg" alt="Loans">
-                        <div class="element-overlay">
-                            <h4>Micro Loans</h4>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-4 business">
-                    <a href="#">
-                        <img id="business-pic" src="img/finance.jpg" alt="business">
-                        <div class="element-overlay">
-                            <h4>Grow</h4>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- END WORK -->
+                    <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a
+                        holy relic. The Earth was absolutely round.</p>
 
-    <!-- PAGE | FEATURES  -->
-    <div class="features" id="features-main">
-        <div class="overlay"></div>
-        <div class="container">
-            <!-- Header -->
-            <header>
-                <h4 class="line-divider">Our Application</h4>
-                <h1>The App</h1>
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <p>
-                            We help connect those seeking the opportunity to make a business, grow a business, and be
-                            better at business with training, resources, and money to reach those goals!
-                        </p>
+                    <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut
+                        one eye, and my thumb blotted out the planet Earth.</p>
+
+                    <div class="btn" id="btn-responsive">
+                        <p class"btn-text" id="btn-p-responsive">Sign Up</p>
                     </div>
                 </div>
-            </header>
-            <!-- End Header -->
+            </section>
 
-            <div>
-                <!-- Features blocks -->
-                <div class="row">
-                    <div class="col-md-3 center">
-                        <img src="img/about01.png" alt="SMS">
-                        <h5>Mobile Based</h5>
-                        <p class="mobile-text">We connect via sms with our clients to streamline
-                            communication.</p>
-                    </div>
-                    <div class="col-md-3 center">
-                        <img src="assets/images/pages/welcome/groupIcon.png" alt="Instruction">
-                        <h5>Groups</h5>
-                        <p class="groups-text">Instructors can organize, commmunicate, and group by needs and
-                            interests.</p>
-                    </div>
-                    <div class="col-md-3 center">
-                        <img src="assets/images/pages/features/about03.png" alt="Schedule">
-                        <h5>Scheduling</h5>
-                        <p class="scheduling-text">We facilitate group training schedules, and timelines for
-                            delivery of consultations.</p>
-                    </div>
-                    <div class="col-md-3 center">
-                        <img src="img/icon-growing-white.png" alt="Grow">
-                        <h5>Grow A Business</h5>
-                        <p class="growing-biz-text">We meet clients at their current stage of business, and help
-                            them reach their business goals with professional advice.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="log-in-section">
-                        <a href="#">
-                            <button type="submit" class="btn btn-primary log-in">
-                                <h5>Log In</h5>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <footer>
+                <p>Copyright SpaceWalkers 2018</p>
+            </footer>
         </div>
     </div>
-
-    <!-- PAGE | ABOUT -->
-    <div class="pages page-about" id="page-about">
-        <div class="container">
-            <!-- Header -->
-            <header>
-                <h4 class="line-divider">About</h4>
-                <h1>Meet The Team</h1>
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <p>
-                            Zaur and LeRoy are two dynamic, diligent, and responsive (pun intended) software engineering
-                            students with the Lambda School.
-                        </p>
-                    </div>
-                </div>
-            </header>
-            <!-- End Header -->
-
-            <!-- Article -->
-            <article>
-                <!-- List of people and description with their contact details which are visable on hover -->
-                <ul class="thumbnails about-items">
-                    <li class="col-md-6 center">
-                        <div class="item">
-                            <!-- Team member image -->
-                            <img class="img-circle" src="assets/images/pages/about/team01.jpg" alt="Zaur">
-
-                            <!-- Team memeber details, activated on hover -->
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <div class="social-icons sicon-white">
-                                        <a href="#" class="sicon-github"><i>Github</i></a>
-                                        <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                        <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Team member name and function -->
-                        <h5>
-                            Zaur Guliyev<br />
-                            <small>Web Developer</small>
-                        </h5>
-                    </li>
-                    <li class="col-md-6 center">
-                        <div class="item">
-                            <img class="img-circle" src="assets/images/pages/about/team02.jpg" alt="LeRoy">
-                            <div class="about-overlay img-circle">
-                                <div class="social-icons sicon-white">
-                                    <a href="#" class="sicon-github"><i>Github</i></a>
-                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h5>
-                            LeRoy Gardner<br />
-                            <small>Web Developer</small>
-                        </h5>
-                    </li>
-
-                </ul>
-            </article>
-        </div>
-    </div>
-    <!-- END ABOUT -->
-
-    <!-- CONTACT -->
-    <!-- Contact information -->
-    <div class="contact-us">
-        <h5>Meet Us</h5>
-        <div class="social-icons sicon-white pull-left">
-            <a href="#" class="sicon-phone"><i>Phone</i></a>
-        </div>
-        <div class="phone">
-            (+1) 555-555-5555
-        </div>
-        <div class="social-icons sicon-white pull-left">
-            <a href="#" class="sicon-place"><i>Location</i></a>
-        </div>
-        <div class="address">
-            7777 Lamdba Avenue, Houston, TX 77494
-        </div>
-        <div class="email">
-            team@zaurandleroy.com
-        </div>
-    </div>
-    <!-- End Contact information -->
-    <!-- END PAGE | CONTACT -->
-</div>
 </body>
 
 </html>
