@@ -5,6 +5,12 @@ header.intro{
 }
 div.logo-landing-page{
     margin: 1% 0% 0% 1%;
+
+    h1{
+        font-size: 1.3rem;
+        margin: 0 auto;
+        color: #878787;
+    }
 }
 div.navigation {margin: 0 auto;
 display: flex;
@@ -13,7 +19,9 @@ width:100%;}
 
 .navigation a{
     margin: 0% 2% 2% 2%;
-    font-size: 1.0rem;
+    font-size: 2.0rem;
+    text-decoration: none;
+    color: #378dd8;
 }
 
 @media @phone{
@@ -21,8 +29,17 @@ header.intro{
     display: flex;
     flex-direction: column;
 }
-div.logo{
+div.logo-landing-page{
     margin:0 auto;
+    text-align: center;
+
+    h1{
+        display:none;
+    }
+
+    .logo-image{
+        max-width: 50%;
+    }
 }
 #navigation-responsive {
     .nav-mixin;

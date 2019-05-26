@@ -154,7 +154,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: rgba(94, 97, 100, 0.8);
 }
 h1,
@@ -162,8 +162,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: 'Bitter', sans-serif;
+  color: #454A59;
 }
 h2 {
   font-size: 3.2rem;
@@ -715,7 +715,8 @@ p {
   border-style: dashed;
 }
 .container-landing-page {
-  max-width: 1000px;
+  max-width: 98%;
+  margin: 0 auto;
 }
 .container-landing-page .intro h2 {
   padding: 15px;
@@ -727,13 +728,20 @@ p {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 98%;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  text-align: center;
 }
 .container-landing-page .features-images img {
-  width: 28%;
-  margin: 20px 2.5%;
+  width: 85%;
+  margin: 2% 2.5%;
   border-radius: 20px;
-  height: 100%;
+  height: 85%;
+}
+.container-landing-page .features-images h4 {
+  font-size: 1.8rem;
 }
 .container-landing-page .features-text {
   padding: 15px;
@@ -794,20 +802,47 @@ p {
 }
 .container-top-content {
   width: 98%;
+  margin: 0 auto;
+  background-image: url(../img/welcome.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
 }
 .logo-image {
   max-width: 15%;
 }
-.image-banner {
-  background-image: url(../img/welcome.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
+h1 {
+  font-size: 2.5rem;
+}
+#training-container {
+  width: 33%;
+  margin: 0 auto;
+}
+#loans-container {
+  width: 33%;
+  margin: 0 auto;
+}
+#growth-container {
+  width: 33%;
+  margin: 0 auto;
 }
 header {
   display: -webkit-box;
   display: flex;
+}
+.app-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.app-container h4 {
+  font-size: 1.8rem;
+}
+.features-app-blocks {
+  display: -webkit-box;
+  display: flex;
+}
+.about-us-text div {
+  width: 100%;
 }
 @media (max-width: 600px) {
   .image-banner {
@@ -829,7 +864,10 @@ header {
   img.finance {
     display: none;
   }
-  #walk-responsive {
+  img.training {
+    display: none;
+  }
+  #about-us-responsive {
     padding: 0;
     width: 95%;
     display: -webkit-box;
@@ -839,11 +877,11 @@ header {
             flex-direction: column;
     margin: 0 auto;
   }
-  #walk-img-responsive {
+  #about-img-responsive {
     width: 100%;
     margin: 0 auto;
   }
-  #walk-text-responsive {
+  #about-us-text-responsive {
     width: 95%;
     margin-bottom: 0px;
     margin: 0 auto;
@@ -871,6 +909,11 @@ header.intro {
 div.logo-landing-page {
   margin: 1% 0% 0% 1%;
 }
+div.logo-landing-page h1 {
+  font-size: 1.3rem;
+  margin: 0 auto;
+  color: #878787;
+}
 div.navigation {
   margin: 0 auto;
   display: -webkit-box;
@@ -884,7 +927,9 @@ div.navigation {
 }
 .navigation a {
   margin: 0% 2% 2% 2%;
-  font-size: 1.0rem;
+  font-size: 2.0rem;
+  text-decoration: none;
+  color: #378dd8;
 }
 @media (max-width: 600px) {
   header.intro {
@@ -894,8 +939,15 @@ div.navigation {
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  div.logo {
+  div.logo-landing-page {
     margin: 0 auto;
+    text-align: center;
+  }
+  div.logo-landing-page h1 {
+    display: none;
+  }
+  div.logo-landing-page .logo-image {
+    max-width: 50%;
   }
   #navigation-responsive {
     display: -webkit-box;
