@@ -785,7 +785,10 @@ header {
   img.finance {
     display: none;
   }
-  #walk-responsive {
+  img.training {
+    display: none;
+  }
+  #about-us-responsive {
     padding: 0;
     width: 95%;
     display: -webkit-box;
@@ -795,11 +798,11 @@ header {
             flex-direction: column;
     margin: 0 auto;
   }
-  #walk-img-responsive {
+  #about-img-responsive {
     width: 100%;
     margin: 0 auto;
   }
-  #walk-text-responsive {
+  #about-us-text-responsive {
     width: 95%;
     margin-bottom: 0px;
     margin: 0 auto;
@@ -858,6 +861,13 @@ div.navigation {
   }
   div.logo-landing-page {
     margin: 0 auto;
+    text-align: center;
+  }
+  div.logo-landing-page h1 {
+    display: none;
+  }
+  div.logo-landing-page .logo-image {
+    max-width: 50%;
   }
   #navigation-responsive {
     display: -webkit-box;
