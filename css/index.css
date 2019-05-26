@@ -754,6 +754,17 @@ header {
   display: -webkit-box;
   display: flex;
 }
+.app-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.app-container h4 {
+  font-size: 1.8rem;
+}
+.features-app-blocks {
+  display: -webkit-box;
+  display: flex;
+}
 @media (max-width: 600px) {
   .image-banner {
     height: 10rem;
