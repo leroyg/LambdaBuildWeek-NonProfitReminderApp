@@ -842,6 +842,9 @@ header {
 .about-us-text div {
   width: 100%;
 }
+footer {
+  text-align: center;
+}
 @media (max-width: 600px) {
   .image-banner {
     height: 10rem;
