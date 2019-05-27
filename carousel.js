@@ -62,9 +62,11 @@ prevButton.addEventListener('click', e => {
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
+    hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
 
 //click right, move slides right
@@ -75,9 +77,11 @@ nextButton.addEventListener('click', e => {
     // const amountToMove = nextSlide.style.left;
     const currentDot = dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
     //move to the next slide
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
+    hideShowArrows(slides, prevButton, nextButton, nexttIndex);
 });
 
 //dots nav fucntionality
