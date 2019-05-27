@@ -187,6 +187,10 @@ p {
   -webkit-box-align: center;
           align-items: center;
 }
+#logo-link {
+  display: -webkit-box;
+  display: flex;
+}
 .create-account-form {
   width: 70%;
   height: 400px;
@@ -832,9 +836,6 @@ header {
 .features-app-blocks {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
 }
 .features-app-blocks img {
   margin-bottom: 5%;
@@ -891,6 +892,16 @@ footer {
   }
   #training-image {
     width: 100%;
+  }
+  .features-app-blocks {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .features-app-blocks img {
+    margin-bottom: 5%;
   }
   img.money {
     display: none;
