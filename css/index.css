@@ -1012,3 +1012,7 @@ div.navigation {
     font-size: 1.4rem;
   }
 }
+.container-landing-page-content {
+  display: -webkit-box;
+  display: flex;
+}
