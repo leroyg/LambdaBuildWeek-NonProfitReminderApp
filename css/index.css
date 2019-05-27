@@ -1036,7 +1036,7 @@ div.navigation {
   bottom: 0;
   width: 100%;
 }
-.carousel__slide.current-slide img {
+.current-slide img {
   display: -webkit-box;
   display: flex;
 }

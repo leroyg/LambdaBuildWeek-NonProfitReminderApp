@@ -26,17 +26,21 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 // slides[1].style.left = slideWidth * 1 + 'px';
 // slides[2].style.left = slideWidth * 2 + 'px';
 
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
+const zeroPositionSlide = () => {
+    slide.style.left = '0px';
+}
 
-slides.forEach(setSlidePosition);
+// const setSlidePosition = (slide, index) => {
+//     slide.style.left = slideWidth * index + 'px';
+// };
+
+// slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transfrom = `translateX(-${ targetSlide.style.left})`;
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
-    console.log(targetSlide);
+    
 }
 
 
