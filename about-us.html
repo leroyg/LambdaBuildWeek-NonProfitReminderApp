@@ -10,6 +10,14 @@
     <link <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,600,700i&display=swap"
         rel="stylesheet">
     <!--<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet"> -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/regular.js"
+        integrity="sha384-iFYyWQkY/Zvsdq3IIxRJI2FBoXPj6g73ok7rIH3sZGulA7E5PvFqB5BOELomUuyh" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/fontawesome.js"
+        integrity="sha384-Ia7KZbX22R7DDSbxNmxHqPQ15ceNzg2U4h5A8dy3K47G2fV1k658BTxXjp7rdhXa" crossorigin="anonymous">
+    </script>
+
     <link href="css/index.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -26,7 +34,7 @@
                 <img class="logo-image" src="./img/logo.jpg" alt="Mentor International Logo">
             </div>
             <div class="navigation" id="navigation-responsive">
-                <a href="#">Home</a>
+                <a href="./landing-page.html">Home</a>
                 <a href="./account.html" target="_blank">Sign In</a>
                 <a href="#">About Us</a>
                 <a href="#">Contact</a>
@@ -37,6 +45,41 @@
             <h1>Developed With Care By:</h1>
             <p><a href="#">Zaur Guliyev</a> & <a href="#">LeRoy Gardner</a></p>
         </div>
+
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left">
+                <i class="fas fa-chevron-left"></i><!-- <img src="./img/chevron-left-solid.svg" alt=""> -->
+            </button>
+
+            <div class="carousel__track-container">
+
+                <ul class="carousel__track">
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./img/team01.jpg" alt="">
+                    </li>
+
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./img/team02.jpg" alt="">
+                    </li>
+
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="./img/girl.png" alt="">
+                    </li>
+                </ul>
+
+            </div>
+
+            <button class="carousel__button carousel__button--right">
+                <i class="fas fa-chevron-right"></i><!-- <img src="./img/chevron-right-solid.svg" alt=""> -->
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

@@ -695,6 +695,9 @@ p {
 .container-landing-page .about-us .about-us-text p {
   margin-bottom: 4%;
 }
+.container-landing-page .about-us .about-us-text a {
+  text-decoration: none;
+}
 .container-landing-page .about-us .btn {
   border-radius: 1rem;
   border: 1px solid;
@@ -1018,4 +1021,51 @@ div.navigation {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  display: -webkit-box;
+  display: flex;
+}
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel__track-container {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+}
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.carousel__button img {
+  width: 20px;
+}
+.carousel__button--right {
+  right: -40px;
+}
+.carousel__button--left {
+  left: -40px;
 }
