@@ -26,21 +26,74 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 // slides[1].style.left = slideWidth * 1 + 'px';
 // slides[2].style.left = slideWidth * 2 + 'px';
 
-const setSlidePosition = (slide, index) =>{
+const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
 
 slides.forEach(setSlidePosition);
+
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transfrom = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+}
+
+const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide');
+}
+
+const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+    if (targetIndex === 0) {
+        prevButton.classList.add('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    } else if (targetIndex === slides.length - 1) {
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.add('is-hidden');
+    } else {
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    };
+}
+
+//click left, move slides left;
+prevButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const prevDot = currentDot.previousElementSibling;
+
+    moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
+});
 
 //click right, move slides right
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     // console.log(currentSlide.nextElementSibling);
     const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
+    // const amountToMove = nextSlide.style.left;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const nextDot = currentDot.nextElementSibling;
     //move to the next slide
-    track.style.transfrom = 'translateX(-' + amountToMove + ')';
-    currentSlide.classList.remove('current-slide');
-    nextSlide.classList.add('current-slide');
-})
+    moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
+});
 
+//dots nav fucntionality
+
+dotsNav.addEventListener('click', e => {
+    // what indiicator was clicked
+    const targetDot = e.target.closest('button');
+
+    if (!targetDot) return;
+
+    const currentSlide = track.querySelector('.current-slide');
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const targetIndex = dots.findIndex(dot => dot === targetDot)
+    const targetSlide = slides[targetIndex];
+
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+    hideShowArrows(slides, prevButton, nextButton, targetIndex);
+})
