@@ -1013,6 +1013,9 @@ div.navigation {
   }
 }
 .container-landing-page-content {
-  display: -webkit-box;
-  display: flex;
+  text-align: center;
+  width: 98%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
