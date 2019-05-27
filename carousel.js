@@ -1,10 +1,10 @@
 //define my track
 const track = document.querySelector('.carousel__track');
-console.log(track);
+// console.log(track);
 
 // define my slides
 const slides = Array.from(track.children);
-console.log(slides);
+// console.log(slides);
 
 const nextButton = document.querySelector('.carousel__button--right');
 
@@ -33,10 +33,12 @@ const setSlidePosition = (slide, index) => {
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transfrom = 'translateX(-' + targetSlide.style.left + ')';
+    track.style.transfrom = `translateX(-${ targetSlide.style.left})`;
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
+    console.log(targetSlide);
 }
+
 
 const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
@@ -81,7 +83,7 @@ nextButton.addEventListener('click', e => {
     //move to the next slide
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
-    hideShowArrows(slides, prevButton, nextButton, nexttIndex);
+    hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
 //dots nav fucntionality
@@ -100,4 +102,5 @@ dotsNav.addEventListener('click', e => {
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
+
 })

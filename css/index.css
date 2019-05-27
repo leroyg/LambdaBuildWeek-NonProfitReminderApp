@@ -1026,8 +1026,8 @@ div.navigation {
 }
 .carousel {
   position: relative;
-  height: 600px;
-  width: 80%;
+  height: 40rem;
+  width: 40%;
   margin: 0 auto;
 }
 .carousel__slide {
@@ -1036,13 +1036,17 @@ div.navigation {
   bottom: 0;
   width: 100%;
 }
+.carousel__slide.current-slide img {
+  display: -webkit-box;
+  display: flex;
+}
 .carousel__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: none;
 }
 .carousel__track-container {
-  background: lightgreen;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -1058,7 +1062,7 @@ div.navigation {
   transition: transform 250ms ease-in;
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
-.carousel__button .fa-chevron-right .fa-chevron-left {
+.carousel__button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1067,7 +1071,7 @@ div.navigation {
   border: 0;
   cursor: pointer;
 }
-.carousel__button .fa-chevron-right .fa-chevron-left img {
+.carousel__button img {
   width: 20px;
 }
 .carousel__button--right {
