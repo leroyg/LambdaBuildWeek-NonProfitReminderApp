@@ -1,14 +1,48 @@
 .container-landing-page-content {
     text-align: center;
-    width: 98%;
+    width: 100%;
     flex-direction: column;
     display: flex;
+    margin: 2% 0;
+
+    h2{
+        font-size: 2.1rem;
+    }
+}
+
+.about-us-details{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    margin: 0 auto;
+
+    .text-about-us{
+        width: 45%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 2% 0;
+        height: 29rem;
+
+        a{
+        font-size: 2.5rem;
+        text-decoration: none;
+        }
+    }
+}
+
+.work-with-us{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+margin-bottom: 5%;
 }
 
 .carousel {
     position: relative;
-    height: 40rem;
-    width: 40%;
+    height: 250px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -92,3 +126,34 @@
 }
 
 .is-hidden { display: none; }
+
+@media @tablet {
+    .about-us-details {
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .text-about-us{
+        flex-direction: column;
+        padding: 2% 0;
+    }
+
+    .work-with-us{
+        margin-top: 2%;
+    }
+}
+
+@media @phone {
+
+    #text-about-us-responsive1 {
+        flex-direction: column;
+        padding: 10% 0;
+        height: 100%;
+    }
+
+    #text-about-us-responsive2 {
+        height: 100%;
+    }
+
+}
